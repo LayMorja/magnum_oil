@@ -1,0 +1,40 @@
+.title {
+   font-family: var(--ff-title);
+   font-weight: 700;
+   font-size: rem(36);
+   line-height: 109%;
+   @media(max-width: $mobile) {
+      font-size: rem(32);
+   }
+   @media(max-width: $tablet) and (max-height: $mobileSmall) {
+      font-size: rem(28);
+   }
+   @media(max-width: $mobileNormal) {
+      font-size: rem(28);
+   }
+   @media(max-width: $mobileSmall) {
+      font-size: rem(24);
+   }
+}
+.text-400 {
+   line-height: 1.2;
+   color: #646464;
+   @media(max-width: $tablet) {
+      font-size: rem(16);
+   }
+   @media(max-width: $mobileNormal) {
+      font-size: rem(14);
+   }
+}
+// ._ff-sans-normal {
+//    font-family: var(--ff-sans-normal);
+// }
+// ._ff-serif {
+//    font-family: var(--ff-serif);
+// }
+._grid {
+   display: grid;
+}
+._flex {
+   display: flex;
+}

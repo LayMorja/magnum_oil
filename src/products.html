@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{ "title":"Продукция" })
+	<body>
+		<div class="wrapper">
+			@@include('html/_header-inner.htm',{})
+			<main class="page page_inner">
+				<div class="page__breadcrumbs breadcrumbs">
+					<div class="breadcrumbs__container">
+						<ul class="breadcrumbs__inner _flex">
+							<li>
+								<a href="home.html" class="breadcrumbs__active-link">
+									<span>Главная</span>
+								</a>
+							</li>
+							<li>
+								<span class="breadcrumbs__arrow-active"></span>
+							</li>
+							<li>
+								<a href="#" class="breadcrumbs__active-link">
+									<span>Продукция</span>
+								</a>
+							</li>
+							<li>
+								<span class="breadcrumbs__arrow-actual"></span>
+							</li>
+							<li>
+								<a href="#" class="breadcrumbs__actual-link">
+									<span>Дизельное топливо</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<section class="page__hero-slider hero-slider">
+					<div class="hero-slider__container">
+						<div class="hero-slider__slider swiper">
+							<div class="hero-slider__wrapper swiper-wrapper">
+								<a href="javascript:void(0);" class="hero-slider__slide swiper-slide">
+									<!-- <div class="hero-slider__content">
+                              <h2 class="hero-slider__title title">Дизельное топливо и смазочные материалы <span class="_red">для сельхозтехники</span></h2>
+                              <span class="hero-slider__description"><strong>Специальное предложение</strong> от компании «Магнум Ойл».</span>
+                              <a href="" class="hero-slider__button button _fill"><span>Узнать подробнее</span></a>
+                           </div> -->
+									<img src="@img/hero-slider/01.webp" alt="" />
+								</a>
+								<a href="javascript:void(0);" class="hero-slider__slide swiper-slide">
+									<!-- <div class="hero-slider__content">
+                              <h2 class="hero-slider__title title">Дизельное топливо и смазочные материалы <span class="_red">для сельхозтехники</span></h2>
+                              <span class="hero-slider__description"><strong>Специальное предложение</strong> от компании «Магнум Ойл».</span>
+                              <a href="" class="hero-slider__button button _fill"><span>Узнать подробнее</span></a>
+                           </div> -->
+									<img src="@img/hero-slider/02.jpg" alt="" />
+								</a>
+								<a href="javascript:void(0);" class="hero-slider__slide swiper-slide">
+									<!-- <div class="hero-slider__content">
+                              <h2 class="hero-slider__title title">Дизельное топливо и смазочные материалы <span class="_red">для сельхозтехники</span></h2>
+                              <span class="hero-slider__description"><strong>Специальное предложение</strong> от компании «Магнум Ойл».</span>
+                              <a href="" class="hero-slider__button button _fill"><span>Узнать подробнее</span></a>
+                           </div> -->
+									<img src="@img/hero-slider/03.jpg" alt="" />
+								</a>
+							</div>
+							<button class="hero-slider__arrow-left">
+								<img
+									src="@img/hero-slider/arrow-left.svg"
+									alt="Пролистать к предыдущему слайду"
+								/>
+							</button>
+							<button class="hero-slider__arrow-right">
+								<img
+									src="@img/hero-slider/arrow-right.svg"
+									alt="Пролистать к следующему слайду"
+								/>
+							</button>
+						</div>
+					</div>
+				</section>
+				<section class="page__product product">
+					<div class="product__container">
+						<div class="product__body _grid">
+							<div class="product__image-box">
+								<img
+									src="@img/product/product.png"
+									alt="Дизельное топливо оптом"
+									class="product__image"
+								/>
+							</div>
+							<div class="product__content">
+								<h1 data-da=".product__body, 991.98, first" class="product__title">
+									Дизельное топливо оптом
+								</h1>
+								<div
+									data-da=".product__body, 991.98, first"
+									class="product__comments _flex"
+								>
+									<div class="product__stars-block _flex">
+										<div class="product__star"></div>
+										<div class="product__star"></div>
+										<div class="product__star"></div>
+										<div class="product__star"></div>
+										<div class="product__star"></div>
+									</div>
+									<span>127 отзывов</span>
+								</div>
+								<div class="product__text text-400">
+									<p>
+										Дизельное топливо используется в двигателях внутреннего сгорания
+										высокой мощности. Производится по технологии перегонки керосина или
+										газойлевых фракций нефти. В СССР дизельное топливо было известно под
+										названием «соляра» – от немецкого наименования Solarol (solar –
+										солнце, ol – масло).
+									</p>
+								</div>
+								<div class="product__activities _flex">
+									<a href="#" class="product__button product__button--disabled button"
+										><span>Нет в наличии</span></a
+									>
+								</div>
+							</div>
+						</div>
+						<nav data-da=".product__body, 991.98, 1" class="product__navigation product-nav">
+							<ul class="product-nav__list _flex">
+								<li class="product-nav__item">
+									<a
+										href="#products"
+										data-goto="#products"
+										data-goto-header
+										class="product-nav__link"
+										><span>Продукция ↓</span></a
+									>
+								</li>
+								<li class="product-nav__item">
+									<a
+										href="#use"
+										data-goto="#use"
+										data-goto-header
+										class="product-nav__link"
+										><span>Области применения ↓</span></a
+									>
+								</li>
+								<li class="product-nav__item">
+									<a
+										href="#price"
+										data-goto="#price"
+										data-goto-header
+										class="product-nav__link"
+										><span>Цены ↓</span></a
+									>
+								</li>
+								<li class="product-nav__item">
+									<a
+										href="#char"
+										data-goto="#char"
+										data-goto-header
+										class="product-nav__link"
+										><span>Характеристики ↓</span></a
+									>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</section>
+				<section class="page__products products" id="products">
+					<div class="products__container">
+						<h2 class="products__title title">Продукция</h2>
+						<h3 class="products__subtitle text-400">
+							Компания «Магнум Ойл» предлагает купить дизельное топливо следующих марок по
+							<strong>ГОСТ 305-82:</strong>
+						</h3>
+						<div class="products__slider-box">
+							<div class="products__slider-shadow">
+								<div class="products__slider swiper">
+									<div class="products__wrapper swiper-wrapper">
+										<div class="products__slide swiper-slide">
+											<a href="#" class="products__card card-products">
+												<div class="card-products__image-box">
+													<img
+														src="img/products/01.png"
+														alt=""
+														class="card-products__image"
+													/>
+												</div>
+												<h4 class="card-products__title card-products__title_products">
+													ДТ ЕВРО, летнее, Сорт C, эко класса K5 (ДТ-Л-К5)
+												</h4>
+												<p class="card-products__text">
+													Горючее летних сортов А, В, С с температурой использования до
+													+5, 0 и -5 °С соответственно.
+												</p>
+												<div class="card-products__price">
+													<span class="card-products__price-text">от 39.72 р.</span>
+													<span class="card-products__price-more">Подробнее</span>
+												</div>
+											</a>
+										</div>
+										<div class="products__slide swiper-slide">
+											<a href="#" class="products__card card-products">
+												<div class="card-products__image-box">
+													<img
+														src="img/products/03.png"
+														alt=""
+														class="card-products__image"
+													/>
+												</div>
+												<h4 class="card-products__title card-products__title_products">
+													ДТ ЕВРО, летнее, Сорт C, эко класса K5 (ДТ-Л-К5)
+												</h4>
+												<p class="card-products__text">
+													Горючее летних сортов А, В, С с температурой использования до
+													+5, 0 и -5 °С соответственно.
+												</p>
+												<div class="card-products__price">
+													<span class="card-products__price-text">от 39.72 р.</span>
+													<span class="card-products__price-more">Подробнее</span>
+												</div>
+											</a>
+										</div>
+										<div class="products__slide swiper-slide">
+											<a
+												href="#"
+												class="products__card card-products card-products_null"
+											>
+												<div class="card-products__image-box">
+													<img
+														src="img/products/02.png"
+														alt=""
+														class="card-products__image"
+													/>
+												</div>
+												<h4 class="card-products__title card-products__title_products">
+													ДТ ЕВРО, летнее, Сорт C, эко класса K5 (ДТ-Л-К5)
+												</h4>
+												<p class="card-products__text">
+													Горючее летних сортов А, В, С с температурой использования до
+													+5, 0 и -5 °С соответственно.
+												</p>
+												<div class="card-products__price">
+													<span
+														class="card-products__price-more card-products__price-more_null"
+														>Нет в наличии</span
+													>
+												</div>
+											</a>
+										</div>
+										<div class="products__slide swiper-slide">
+											<a href="#" class="products__card card-products">
+												<div class="card-products__image-box">
+													<img
+														src="img/products/01.png"
+														alt=""
+														class="card-products__image"
+													/>
+												</div>
+												<h4 class="card-products__title card-products__title_products">
+													ДТ ЕВРО, летнее, Сорт C, эко класса K5 (ДТ-Л-К5)
+												</h4>
+												<p class="card-products__text">
+													Горючее летних сортов А, В, С с температурой использования до
+													+5, 0 и -5 °С соответственно.
+												</p>
+												<div class="card-products__price">
+													<span class="card-products__price-text">от 39.72 р.</span>
+													<span class="card-products__price-more">Подробнее</span>
+												</div>
+											</a>
+										</div>
+										<div class="products__slide swiper-slide">
+											<a href="#" class="products__card card-products">
+												<div class="card-products__image-box">
+													<img
+														src="img/products/03.png"
+														alt=""
+														class="card-products__image"
+													/>
+												</div>
+												<h4 class="card-products__title card-products__title_products">
+													ДТ ЕВРО, летнее, Сорт C, эко класса K5 (ДТ-Л-К5)
+												</h4>
+												<p class="card-products__text">
+													Горючее летних сортов А, В, С с температурой использования до
+													+5, 0 и -5 °С соответственно.
+												</p>
+												<div class="card-products__price">
+													<span class="card-products__price-text">от 39.72 р.</span>
+													<span class="card-products__price-more">Подробнее</span>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__use use" id="use">
+					<div class="use__container">
+						<div class="use__body _grid">
+							<div class="use__content">
+								<h2 class="use__title title">Области применения</h2>
+								<div class="use__text text-400">
+									<p>
+										Дизельное топливо используется в качестве горючего в судовых и
+										тепловозных двигателях, применяется в строительной технике,
+										сельскохозяйственных машинах, в спецтранспорте. Современные
+										автопроизводители выпускают коммерческие и легковые автомобили с
+										дизельными двигателями. Высокая популярность таких решений обусловлена
+										хорошей тепловой отдачей горючего (до 25 % по сравнению с бензином), а
+										также надежностью, долговечностью и простотой обслуживания самих
+										моторов.
+									</p>
+									<p>
+										Купить дизельное топливо оптом на выгодных условиях можно в компании
+										«Магнум Ойл». Возможен самовывоз нефтепродуктов с ближайшего пункта
+										отгрузки или доставка нашими бензовозами.
+									</p>
+								</div>
+							</div>
+							<div class="use__image-box">
+								<img src="@img/use/image.svg" alt="Области применения" class="use__image" />
+							</div>
+						</div>
+						<div class="use__slider-box">
+							<div class="use__slider swiper">
+								<div class="use__wrapper swiper-wrapper">
+									<div class="use__slide swiper-slide">
+										<a href="#" class="use__card">
+											<h3 class="use__card-title">
+												Строительные <br />
+												компании
+											</h3>
+										</a>
+									</div>
+									<div class="use__slide swiper-slide">
+										<a href="#" class="use__card">
+											<h3 class="use__card-title">
+												Производственные <br />
+												предприятия
+											</h3>
+										</a>
+									</div>
+									<div class="use__slide swiper-slide">
+										<a href="#" class="use__card">
+											<h3 class="use__card-title">
+												Дорожно ремонтное строительное управление (ДРСУ)
+											</h3>
+										</a>
+									</div>
+									<div class="use__slide swiper-slide">
+										<a href="#" class="use__card">
+											<h3 class="use__card-title">
+												Авто заправочные <br />
+												станции (АЗС)
+											</h3>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__price price" id="price">
+					<div class="price__inner">
+						<h2 class="price__title title">Цена на дизельное топливо оптом</h2>
+						<h3 class="price__subtitle">Цена на нефтепродукты от 04.01.2019</h3>
+						<div class="price__body">
+							<div class="price__table">
+								<table>
+									<tbody>
+										<tr>
+											<th>Наименование топлива</th>
+											<th>Плотность</th>
+											<th>Цена за литр</th>
+											<th>Купить</th>
+										</tr>
+										<tr>
+											<td>
+												ДТ ЕВРО, летнее, Сорт C, эко класса K5 (ДТ-Л-К5)
+												<div>
+													<a target="_blank" href="#"><span>Паспорт</span></a>
+													<a target="_blank" href="#"
+														><img src="@img/image-low.svg" alt="Паспорт"
+													/></a>
+												</div>
+											</td>
+											<td>0.839</td>
+											<td>48.33 р.</td>
+											<td><a href="#">Заказать</a></td>
+										</tr>
+										<tr>
+											<td>
+												Бензин неэтилированный АИ-92-К5
+												<div>
+													<a target="_blank" href="#"><span>Паспорт</span></a>
+													<a target="_blank" href="#"
+														><img src="@img/image-low.svg" alt="Паспорт"
+													/></a>
+												</div>
+											</td>
+											<td>0.839</td>
+											<td>48.33 р.</td>
+											<td><a href="#">Заказать</a></td>
+										</tr>
+										<tr>
+											<td>
+												Бензин неэтилированный АИ-92-К5
+												<div>
+													<a target="_blank" href="#"><span>Паспорт</span></a>
+													<a target="_blank" href="#"
+														><img src="@img/image-low.svg" alt="Паспорт"
+													/></a>
+												</div>
+											</td>
+											<td>0.839</td>
+											<td>48.33 р.</td>
+											<td><a href="#">Заказать</a></td>
+										</tr>
+										<tr>
+											<td>
+												Бензин неэтилированный АИ-98-К5
+												<div>
+													<a target="_blank" href="#"><span>Паспорт</span></a>
+													<a target="_blank" href="#"
+														><img src="@img/image-low.svg" alt="Паспорт"
+													/></a>
+												</div>
+											</td>
+											<td>0.839</td>
+											<td>48.33 р.</td>
+											<td><a href="#">Заказать</a></td>
+										</tr>
+										<tr>
+											<td>
+												Бензин неэтилированный АИ-100-К5
+												<div>
+													<a target="_blank" href="#"><span>Паспорт</span></a>
+													<a target="_blank" href="#"
+														><img src="@img/image-low.svg" alt="Паспорт"
+													/></a>
+												</div>
+											</td>
+											<td>0.839</td>
+											<td>48.33 р.</td>
+											<td><a href="#">Заказать</a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="price__description _flex">
+								<span>Позвоните вашему персональному менеджеру по телефону</span>
+								<a href="tel:+74951234567">+7 495 123-45-67</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__char char" id="char">
+					<div class="char__container">
+						<div class="char__body _grid">
+							<div class="char__info">
+								<h2 class="char__info-title title">Характеристики дизельного топлива</h2>
+								<div class="char__info-text">
+									<p>
+										Параметры горючего влияют на его энергоэффективность, на надежность
+										работы мотора.
+									</p>
+									<p>
+										В России с 2016 года действует экологический стандарт К5, закрепленный
+										в ГОСТ 32511-2013 и обязательный для исполнения всеми участниками
+										топливного рынка. Положения регламента практически полностью повторяют
+										условия «ЕВРО-5» (EN 590:2009). Согласно стандарту, на территории РФ
+										запрещена продажа дизельного топлива классом ниже К5.
+									</p>
+								</div>
+								<div class="char__info-links">
+									<a href="#" class="char__info-link"><span>Нефтебазы ➝</span></a>
+									<a href="#" class="char__info-link"><span>Поставщики ➝</span></a>
+									<a href="#" class="char__info-link"><span>ГОСТы ➝</span></a>
+									<a href="#" class="char__info-link"><span>Договоры ➝</span></a>
+									<a href="#" class="char__info-link"><span>Сертификаты ➝</span></a>
+								</div>
+							</div>
+							<div class="char__block">
+								<h3 class="char__block-title">Важные характеристики дизельного топлива:</h3>
+								<ul class="char__block-list">
+									<li class="char__block-item">
+										Температура воспламенения. Значение параметра – не ниже +55 °С у
+										летних и всесезонных сортов топлива и +47 °С у зимних.
+									</li>
+									<li class="char__block-item">
+										Цетановое число. В оборотистых легковых моторах используют дизельное
+										топливо с характеристикой не ниже 51, в двигателях грузовиков и
+										спецтехники – не ниже 40.
+									</li>
+									<li class="char__block-item">
+										Плотность. Оптимальные значения для горючего при температуре +15 °С –
+										от 820 до 840 кг/м3.
+									</li>
+									<li class="char__block-item">
+										Содержание воды. Значение не должно превышать 0,2 % или 200 мг/кг
+										дизтоплива.
+									</li>
+									<li class="char__block-item">
+										Содержание примесей. Допустимое общее загрязнение – до 24 мг/кг, из
+										них серы – не более 10 мг/кг (0,01 %).
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</section>
+				<div class="page__advantages advantages">
+					<div class="advantages__container">
+						<div class="advantages-main _grid">
+							<div class="advantages-main__card _flex">
+								<div class="advantages-main__image">
+									<img src="@img/main/benefits_1.svg" alt="Топливо ГОСТ" />
+								</div>
+								<div class="advantages-main__content">
+									<p class="advantages-main__text">
+										<strong>Топливо ГОСТ и ТУ</strong> напрямую с заводов производителей
+									</p>
+									<a href="" class="advantages-main__link">Нефтебазы&nbsp;→</a>
+									<a href="" class="advantages-main__link">Документация&nbsp;→</a>
+								</div>
+							</div>
+							<div class="advantages-main__card _flex">
+								<div class="advantages-main__image">
+									<img src="@img/main/benefits_2.svg" alt="Топливо ГОСТ" />
+								</div>
+								<div class="advantages-main__content">
+									<p class="advantages-main__text">
+										<strong>Гарантия качества топлива</strong> в каждой поставке
+									</p>
+									<a href="" class="advantages-main__link"
+										>Как мы гарантируем качество&nbsp;→</a
+									>
+								</div>
+							</div>
+							<div class="advantages-main__card _flex">
+								<div class="advantages-main__image">
+									<img src="@img/main/benefits_3.svg" alt="Топливо ГОСТ" />
+								</div>
+								<div class="advantages-main__content">
+									<p class="advantages-main__text">
+										<strong>Cтраховка на 5 млн. р.</strong> от возможного ущерба техник
+									</p>
+									<a href="" class="advantages-main__link">Запросить документы&nbsp;→</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="page__consult consult">
+					<div class="consult__container">
+						<div class="consult__inner _flex">
+							<div class="consult__content">
+								<h2 class="consult__main-title title">Услуги</h2>
+								<h2 class="consult__title">
+									Профессиональная консультация от наших экспертов
+								</h2>
+								<ul class="consult__list">
+									<li class="consult__item">Предложим лучшие условия и цены</li>
+									<li class="consult__item">Подберем оптимальную нефтебазу</li>
+									<li class="consult__item">
+										Подходящие по объему и техническому оснащению автоцистерны
+									</li>
+									<li class="consult__item">
+										Спрогнозируем месячную потребность, закупку/резервирование топлива на
+										нефтебазе
+									</li>
+									<li class="consult__item">
+										Проконтролируем качество закупаемого продукта на всех этапах
+									</li>
+								</ul>
+							</div>
+							<div class="consult__form">
+								<form action="#" class="consult__form form-consult">
+									<input
+										autocomplete="off"
+										type="text"
+										name="form[]"
+										data-error="Ошибка"
+										placeholder="+7 (123) 123-45-67"
+										class="form-consult__input input-phone"
+									/>
+									<button class="form-consult__submit button _fill" type="submit">
+										<span>Получить консультацию</span>
+									</button>
+									<p class="form-consult__text">
+										Топливный калькулятор с учетом объема и расстояния
+									</p>
+									<a href="#" class="form-consult__link">
+										Рассчитать стоимость доставки →
+									</a>
+								</form>
+							</div>
+							<div class="consult__image-box">
+								<img
+									src="@img/consult/image.png"
+									alt="Профессиональная консультация от наших экспертов"
+								/>
+							</div>
+							<span class="consult__description">
+								АЛЕКСЕЙ <br />
+								ПАНИН <br />
+								<span>Основатель</span>
+							</span>
+							<div class="consult__elements">
+								<picture>
+									<source media="(min-width: 375px)" srcset="@img/consult/elements.svg" />
+									<source
+										media="(max-width: 375px)"
+										srcset="@img/consult/elements-mobile.svg"
+									/>
+									<img src="@img/consult/elements.svg" alt="" />
+								</picture>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__oil oil">
+					<div class="oil__container">
+						<div class="oil__inner _flex">
+							<div class="oil__image-box">
+								<img
+									src="@img/oil/image.png"
+									alt="Масла и смазочные материалы оптом"
+									class="oil__image"
+								/>
+							</div>
+							<div class="oil__content">
+								<h2 class="oil__title">Масла и смазочные материалы оптом</h2>
+								<p class="oil__text text-400">
+									Компания «Магнум ойл» реализует широкий ассортимент горюче-смазочных
+									материалов различного предназначения и предлагает клиентам
+									привлекательные условия сотрудничества. Мы заключили прямые договоры
+									поставки с ключевыми дистрибьюторами отрасли, что гарантирует оперативную
+									доставку розничных и оптовых партий товара.
+								</p>
+								<a href="" class="oil__button button">
+									<span>Подробнее про смазочные материалы</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__another another">
+					<div class="another__container">
+						<h2 class="another__title title">Другие услуги</h2>
+						<div class="another__shadow">
+							<div class="another__body _grid">
+								<a href="#" class="another__card">
+									<h3 class="another__card-title">Доставка нефтепродуктов</h3>
+									<div class="another__image-box">
+										<img
+											src="@img/another/01.svg"
+											alt="Доставка нефтепродуктов"
+											class="another__image"
+										/>
+									</div>
+								</a>
+								<a href="#" class="another__card">
+									<h3 class="another__card-title">Установка емкостей</h3>
+									<div class="another__image-box">
+										<img
+											src="@img/another/02.svg"
+											alt="Установка емкостей"
+											class="another__image"
+										/>
+									</div>
+								</a>
+								<a href="#" class="another__card">
+									<h3 class="another__card-title">Масла и СОЖ</h3>
+									<div class="another__image-box">
+										<img
+											src="@img/another/02.svg"
+											alt="Масла и СОЖ"
+											class="another__image"
+										/>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__news news news_choose">
+					<div class="news__container news__container_choose">
+						<div class="news__background news__background_choose">
+							<div class="news__content choose">
+								<h2 class="choose__title">Подобрать топливо</h2>
+								<form action="#" class="choose__form _grid">
+									<input
+										autocomplete="off"
+										type="text"
+										name="form[]"
+										data-error="Ошибка"
+										placeholder="Ваше имя"
+										class="choose__input"
+									/>
+									<input
+										autocomplete="off"
+										type="text"
+										name="form[]"
+										data-error="Ошибка"
+										placeholder="+7 (123) 123-45-67"
+										class="choose__input input-phone"
+									/>
+									<textarea
+										name="form[]"
+										data-error="Ошибка"
+										placeholder="Опишите какое топливо используете, объем и адрес доставки"
+										class="choose__input choose__input_textarea"
+									></textarea>
+									<button type="submit" class="choose__submit">
+										<span>Получить предложение</span>
+									</button>
+									<span class="choose__description"
+										>Нажимая на кнопку отправить, вы даете согласие на обработку своих
+										<a href="#">персональных данных</a></span
+									>
+								</form>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__experience experience">
+					<div class="experience__container">
+						<div class="experience__body _grid">
+							<div class="experience__column">
+								<div class="experience__image-box">
+									<img src="@img/experience/image.svg" alt="" class="experience__image" />
+								</div>
+								<div class="experience__info">
+									<h2 class="experience__title title">
+										Наш опыт на рынке <br />
+										с 2007 года
+									</h2>
+									<p class="experience__text text-400">
+										Мы сотрудничаем с проверенными НПЗ, предлагаем полный комплекс
+										сопутствующих услуг, предоставляем сертификаты соответствия на
+										продукцию. Наши цены ниже, потому что мы не переплачиваем посредникам.
+										По вопросам оптовых поставок дизтоплива позвоните нам по телефону,
+										указанному на сайте.
+									</p>
+								</div>
+							</div>
+							<div class="experience__column">
+								<div style="height: 824px; overflow: hidden; position: relative">
+									<iframe
+										style="
+											width: 100%;
+											height: 100%;
+											border: 1px solid #e6e6e6;
+											border-radius: 8px;
+											box-sizing: border-box;
+										"
+										src="https://yandex.ru/maps-reviews-widget/128527276537?comments"
+									></iframe
+									><a
+										href="https://yandex.ru/maps/org/magnum_oyl/128527276537/"
+										target="_blank"
+										style="
+											box-sizing: border-box;
+											text-decoration: none;
+											color: #b3b3b3;
+											font-size: 10px;
+											font-family: YS Text, sans-serif;
+											padding: 0 20px;
+											position: absolute;
+											bottom: 8px;
+											width: 100%;
+											text-align: center;
+											left: 0;
+											overflow: hidden;
+											text-overflow: ellipsis;
+											display: block;
+											max-height: 14px;
+											white-space: nowrap;
+											padding: 0 16px;
+											box-sizing: border-box;
+										"
+									></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="page__blog blog">
+					<div class="blog__container">
+						<div class="blog__header">
+							<h2 class="blog__title title">Блог</h2>
+							<a href="#" class="blog__link">Все статьи ➝</a>
+						</div>
+						<div class="blog__body blog__body_tripple">
+							<a href="#" class="blog__card card-blog">
+								<div class="card-blog__image-box">
+									<img src="#" alt="" class="card-blog__image" />
+								</div>
+								<div class="card-blog__body">
+									<h3 class="card-blog__title">
+										Росстандарт начнет закупки топлива на АЗС в режиме «тайного
+										покупателя»
+									</h3>
+									<div class="card-blog__date">
+										<span>07.12.2021</span>
+										<span>1578</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="blog__card card-blog">
+								<div class="card-blog__image-box">
+									<img src="#" alt="" class="card-blog__image" />
+								</div>
+								<div class="card-blog__body">
+									<h3 class="card-blog__title">
+										Росстандарт начнет закупки топлива на АЗС в режиме «тайного
+										покупателя»
+									</h3>
+									<div class="card-blog__date">
+										<span>07.12.2021</span>
+										<span>1578</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="blog__card card-blog">
+								<div class="card-blog__image-box">
+									<img src="#" alt="" class="card-blog__image" />
+								</div>
+								<div class="card-blog__body">
+									<h3 class="card-blog__title">
+										Росстандарт начнет закупки топлива на АЗС в режиме «тайного
+										покупателя»
+									</h3>
+									<div class="card-blog__date">
+										<span>07.12.2021</span>
+										<span>1578</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="blog__link blog__link_hidden">Все статьи ➝</a>
+					</div>
+				</section>
+				<div class="page__news news">
+					<div class="news__container">
+						<div class="news__background">
+							<div class="news__content">
+								<div class="news__item _flex">
+									<div class="news__image-box">
+										<img src="@img/news/bell.svg" aria-hidden="true" alt="" />
+									</div>
+									<div class="news__item-column">
+										<span
+											>Подпишитесь <br />
+											на новости и акции</span
+										>
+										<span
+											>Получайте всю актуальную информацию о топливной отрасли. Только
+											актуальная информация, без спама.</span
+										>
+									</div>
+								</div>
+								<div class="news__item _flex">
+									<form action="#" class="news__item-form form-news">
+										<div class="form-news__item">
+											<input
+												autocomplete="off"
+												type="text"
+												name="form[]"
+												data-error="Ошибка"
+												placeholder="E-mail адрес"
+												class="form-news__input"
+											/>
+											<button class="form-news__submit" type="submit">
+												<span>Подписаться</span>
+											</button>
+										</div>
+										<span class="form-news__item form-news__item_span"
+											>Отправляя форму, вы даете согласие на обработку
+											<a href="#">персональных данных.</a></span
+										>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<section class="page__blog blog">
+					<div class="blog__container">
+						<div class="blog__header">
+							<h2 class="blog__title title">Новости</h2>
+							<a href="#" class="blog__link">Все новости ➝</a>
+						</div>
+						<div class="blog__body blog__body_news">
+							<a href="#" class="blog__card card-blog">
+								<div class="card-blog__image-box">
+									<img src="#" alt="" class="card-blog__image" />
+								</div>
+								<div class="card-blog__body">
+									<h3 class="card-blog__title">
+										Росстандарт начнет закупки топлива на АЗС в режиме «тайного
+										покупателя»
+									</h3>
+									<div class="card-blog__date">
+										<span>07.12.2021</span>
+										<span>1578</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="blog__card card-blog">
+								<div class="card-blog__image-box">
+									<img src="#" alt="" class="card-blog__image" />
+								</div>
+								<div class="card-blog__body">
+									<h3 class="card-blog__title">
+										Росстандарт начнет закупки топлива на АЗС в режиме «тайного
+										покупателя»
+									</h3>
+									<div class="card-blog__date">
+										<span>07.12.2021</span>
+										<span>1578</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="blog__card card-blog">
+								<div class="card-blog__image-box">
+									<img src="#" alt="" class="card-blog__image" />
+								</div>
+								<div class="card-blog__body">
+									<h3 class="card-blog__title">
+										Росстандарт начнет закупки топлива на АЗС в режиме «тайного
+										покупателя»
+									</h3>
+									<div class="card-blog__date">
+										<span>07.12.2021</span>
+										<span>1578</span>
+									</div>
+								</div>
+							</a>
+							<a href="#" class="blog__card card-blog">
+								<div class="card-blog__image-box">
+									<img src="#" alt="" class="card-blog__image" />
+								</div>
+								<div class="card-blog__body">
+									<h3 class="card-blog__title">
+										Росстандарт начнет закупки топлива на АЗС в режиме «тайного
+										покупателя»
+									</h3>
+									<div class="card-blog__date">
+										<span>07.12.2021</span>
+										<span>1578</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<a href="#" class="blog__link blog__link_hidden">Все новости ➝</a>
+					</div>
+				</section>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+	</body>
+</html>
