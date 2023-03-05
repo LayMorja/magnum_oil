@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/_head.htm',{ "title":"Продукция" })
+  <body>
+    <div class="wrapper">
+      @@include('html/_header-inner.htm',{})
+      <main class="page page_inner">
+        <div class="page__breadcrumbs breadcrumbs">
+          <div class="breadcrumbs__container">
+            <ul class="breadcrumbs__inner _flex">
+              <li>
+                <a href="home.html" class="breadcrumbs__active-link">
+                  <span>Главная</span>
+                </a>
+              </li>
+              <li>
+                <span class="breadcrumbs__arrow-active"></span>
+              </li>
+              <li>
+                <a href="#" class="breadcrumbs__active-link">
+                  <span>Специальные предложения</span>
+                </a>
+              </li>
+              <li>
+                <span class="breadcrumbs__arrow-actual"></span>
+              </li>
+              <li>
+                <a href="#" class="breadcrumbs__actual-link">
+                  <span>Для сельхозтехники и агропром</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section
+          class="page__preview preview"
+          style="background-image: url('@img/preview/image.png')">
+          <div class="preview__container">
+            <h1 class="preview__title">
+              «Магнум-Ойл» расширяет <span>ассортимент нефтепродуктов</span>
+            </h1>
+            <p class="preview__descr">
+              <strong>Специальное предложение</strong> от компании «Магнум Ойл».
+            </p>
+            <a href="javascript:void(0);" class="preview__link button _fill">
+              <span>Получить рассчет</span>
+            </a>
+          </div>
+        </section>
+        <section class="page__oil-products oil-products">
+          <div class="oil-products__container">
+            <h2 class="oil-products__main-title">Теперь у нас можно <span>приобрести</span></h2>
+            <p class="oil-products__descr">
+              Все нефтепродукты проходят строгий контроль и лабораторные тесты. Соответствующие
+              сертификаты качества гарантируют безопасность и высокий уровень товаров.
+              <strong>Быстрая доставка нефтепродуктов в любых количествах!</strong>
+            </p>
+            <nav class="oil-products__navigation">
+              <ul class="oil-products__list">
+                <li class="oil-products__item">
+                  <button
+                    class="oil-products__button"
+                    data-goto="#sug"
+                    data-goto-header
+                    aria-label="Прокрутить до описания СУГ">
+                    <img src="@img/oil-products/01.svg" width="84" height="122" alt="СУГ" />
+                    <span>СУГ</span>
+                  </button>
+                </li>
+                <li class="oil-products__item">
+                  <button
+                    class="oil-products__button"
+                    data-goto="#bitum"
+                    data-goto-header
+                    aria-label="Прокрутить до описания Битума">
+                    <img src="@img/oil-products/02.svg" width="123" height="122" alt="Битум" />
+                    <span>Битум</span>
+                  </button>
+                </li>
+                <li class="oil-products__item">
+                  <button
+                    class="oil-products__button"
+                    data-goto="#mazut"
+                    data-goto-header
+                    aria-label="Прокрутить до описания Мазута">
+                    <img src="@img/oil-products/03.svg" width="123" height="122" alt="Мазут" />
+                    <span>Мазут</span>
+                  </button>
+                </li>
+                <li class="oil-products__item">
+                  <button
+                    class="oil-products__button"
+                    data-goto="#masla"
+                    data-goto-header
+                    aria-label="Прокрутить до описания Масел">
+                    <img src="@img/oil-products/04.svg" width="97" height="122" alt="Масла" />
+                    <span>Масла</span>
+                  </button>
+                </li>
+                <li class="oil-products__item">
+                  <button
+                    class="oil-products__button"
+                    data-goto="#dt"
+                    data-goto-header
+                    aria-label="Прокрутить до описания аналогов ДТ">
+                    <img src="@img/oil-products/05.svg" width="123" height="122" alt="Аналоги ДТ" />
+                    <span>Аналоги ДТ</span>
+                  </button>
+                </li>
+                <li class="oil-products__item">
+                  <button
+                    class="oil-products__button"
+                    data-goto="#pech-toplivo"
+                    data-goto-header
+                    aria-label="Прокрутить до описания печного топлива">
+                    <img
+                      src="@img/oil-products/06.svg"
+                      width="132"
+                      height="120"
+                      alt="Печное топливо" />
+                    <span>Печное топливо</span>
+                  </button>
+                </li>
+              </ul>
+              <a href="javascript:void(0);" class="oil-products__link button _fill">
+                <span>Получить рассчет</span>
+              </a>
+            </nav>
+            <div class="oil-products__body">
+              <div class="oil-products__block block-oil-products" id="sug">
+                <div class="block-oil-products__content">
+                  <h3 class="block-oil-products__title">СУГ</h3>
+                  <p class="block-oil-products__descr">
+                    Углеродная смесь повышенного уровня экологичности предназначена для отопления
+                    промышленных предприятий и жилых домов, в качестве автомобильного топлива и
+                    сырья для производств.
+                  </p>
+                  <ul class="block-oil-products__list">
+                    <li class="block-oil-products__item">
+                      Оптовая продажа газа в соответствии со всеми правилами техники безопасности
+                    </li>
+                    <li class="block-oil-products__item">
+                      Доставка и самовывоз автоналивом с помощью автоцистерн (от 5 тонн)
+                    </li>
+                    <li class="block-oil-products__item">
+                      Доставка крупного опта в железнодорожных цистернах (от 60 тонн)
+                    </li>
+                    <li class="block-oil-products__item">
+                      Продажа газа в баллонах всех видов, аренда любой категории баллона
+                    </li>
+                  </ul>
+                </div>
+                <div class="block-oil-products__image">
+                  <img src="@img/oil-products/01.svg" width="210" height="305" alt="СУГ" />
+                </div>
+              </div>
+              <div class="oil-products__block block-oil-products" id="bitum">
+                <div class="block-oil-products__content">
+                  <h3 class="block-oil-products__title">Битум</h3>
+                  <p class="block-oil-products__descr">
+                    Битум – продукт углеводородного происхождения. Основная сфера применения –
+                    строительство линейных объектов, зданий, сооружений. Также используется для
+                    дорожных строительных работ.
+                  </p>
+                  <ul class="block-oil-products__list">
+                    <li class="block-oil-products__item">БНД 70/10</li>
+                    <li class="block-oil-products__item">БНД 60/90</li>
+                    <li class="block-oil-products__item">БНД 90/130</li>
+                    <li class="block-oil-products__item">
+                      БНД 100/130 Битурокс Ярославль — дорожный улучшенный битум
+                    </li>
+                  </ul>
+                </div>
+                <div class="block-oil-products__image">
+                  <img src="@img/oil-products/02.svg" width="262" height="262" alt="Битум" />
+                </div>
+              </div>
+              <div class="oil-products__block block-oil-products" id="mazut">
+                <div class="block-oil-products__content">
+                  <h3 class="block-oil-products__title">Мазут</h3>
+                  <p class="block-oil-products__descr">
+                    Горючее с высокой удельной теплотой сгорания и низкой стоимостью применяется в
+                    системах автономного и централизованного отопления, на ТЭС и других промышленных
+                    объектах.
+                  </p>
+                  <ul class="block-oil-products__list">
+                    <li class="block-oil-products__item">Крупный и мелкий опт</li>
+                    <li class="block-oil-products__item">
+                      Для транспортных средств, оснащенных специальными энергетическими установками,
+                      котельных и технологических установок
+                    </li>
+                    <li class="block-oil-products__item">Мазут М 100</li>
+                    <li class="block-oil-products__item">Мазут топочный (котельный).</li>
+                  </ul>
+                </div>
+                <div class="block-oil-products__image">
+                  <img src="@img/oil-products/03.svg" width="294" height="292" alt="Мазут" />
+                </div>
+              </div>
+              <div class="oil-products__block block-oil-products" id="masla">
+                <div class="block-oil-products__content">
+                  <h3 class="block-oil-products__title">Масла</h3>
+                  <p class="block-oil-products__descr">
+                    Качественные горюче-смазочные материалы помогут транспорту и промышленному
+                    оборудованию правильно работать, оставаться надежными и долговечными.
+                  </p>
+                  <ul class="block-oil-products__list">
+                    <li class="block-oil-products__item">Для легковых автомобилей</li>
+                    <li class="block-oil-products__item">Для коммерческого транспорта и техники</li>
+                    <li class="block-oil-products__item">Индустриальные масла</li>
+                    <li class="block-oil-products__item">Базовые масла и попутная продукция</li>
+                  </ul>
+                </div>
+                <div class="block-oil-products__image">
+                  <img src="@img/oil-products/04.svg" width="218" height="275" alt="Масла" />
+                </div>
+              </div>
+              <div class="oil-products__block block-oil-products" id="dt">
+                <div class="block-oil-products__content">
+                  <h3 class="block-oil-products__title">Аналоги ДТ</h3>
+                  <p class="block-oil-products__descr">
+                    Горючее с высокой удельной теплотой сгорания и низкой стоимостью применяется в
+                    системах автономного и централизованного отопления, на ТЭС и других промышленных
+                    объектах.
+                  </p>
+                  <ul class="block-oil-products__list">
+                    <li class="block-oil-products__item">Крупный и мелкий опт</li>
+                    <li class="block-oil-products__item">
+                      Для транспортных средств, оснащенных специальными энергетическими установками,
+                      котельных и технологических установок
+                    </li>
+                    <li class="block-oil-products__item">Мазут М 100</li>
+                    <li class="block-oil-products__item">Мазут топочный (котельный).</li>
+                  </ul>
+                </div>
+                <div class="block-oil-products__image">
+                  <img src="@img/oil-products/05.svg" width="296" height="294" alt="Аналоги ДТ" />
+                </div>
+              </div>
+              <div class="oil-products__block block-oil-products" id="pech-toplivo">
+                <div class="block-oil-products__content">
+                  <h3 class="block-oil-products__title">Печное топливо</h3>
+                  <p class="block-oil-products__descr">
+                    Качественные горюче-смазочные материалы помогут транспорту и промышленному
+                    оборудованию правильно работать, оставаться надежными и долговечными.
+                  </p>
+                  <ul class="block-oil-products__list">
+                    <li class="block-oil-products__item">Для легковых автомобилей</li>
+                    <li class="block-oil-products__item">Для коммерческого транспорта и техники</li>
+                    <li class="block-oil-products__item">Индустриальные масла</li>
+                    <li class="block-oil-products__item">Базовые масла и попутная продукция</li>
+                  </ul>
+                </div>
+                <div class="block-oil-products__image">
+                  <img
+                    src="@img/oil-products/06.svg"
+                    width="274"
+                    height="251"
+                    alt="Печное топливо" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="page__oil-benefits oil-benefits">
+          <div class="oil-benefits__container">
+            <div class="oil-benefits__item">
+              <div class="oil-benefits__image-cover">
+                <img
+                  src="@img/oil-benefits/01.svg"
+                  width="65"
+                  height="72"
+                  alt=""
+                  aria-hidden="true"
+                  class="oil-benefits__image" />
+              </div>
+              <p class="oil-benefits__descr"><strong>Постоянная</strong> техническая поддержка</p>
+            </div>
+            <div class="oil-benefits__item">
+              <div class="oil-benefits__image-cover">
+                <img
+                  src="@img/oil-benefits/02.svg"
+                  width="43"
+                  height="73"
+                  alt=""
+                  aria-hidden="true"
+                  class="oil-benefits__image" />
+              </div>
+              <p class="oil-benefits__descr">
+                <strong>Гарантия качества</strong> в&nbsp;каждой поставке
+              </p>
+            </div>
+            <div class="oil-benefits__item">
+              <div class="oil-benefits__image-cover">
+                <img
+                  src="@img/oil-benefits/03.svg"
+                  width="67"
+                  height="72"
+                  alt=""
+                  aria-hidden="true"
+                  class="oil-benefits__image" />
+              </div>
+              <p class="oil-benefits__descr">
+                <strong>Всегда в наличии</strong> широкий ассортимент
+              </p>
+            </div>
+            <div class="oil-benefits__item">
+              <div class="oil-benefits__image-cover">
+                <img
+                  src="@img/oil-benefits/04.svg"
+                  width="67"
+                  height="67"
+                  alt=""
+                  aria-hidden="true"
+                  class="oil-benefits__image" />
+              </div>
+              <p class="oil-benefits__descr"><strong>Кратчайшие сроки</strong> поставки</p>
+            </div>
+          </div>
+        </div>
+        <section class="page__news news news_choose">
+          <div class="news__container news__container_choose">
+            <div class="news__background news__background_choose">
+              <div class="news__content choose">
+                <h2 class="choose__title">Подобрать топливо</h2>
+                <form action="#" class="choose__form _grid">
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    name="form[]"
+                    data-error="Ошибка"
+                    placeholder="Ваше имя"
+                    class="choose__input" />
+                  <input
+                    autocomplete="off"
+                    type="text"
+                    name="form[]"
+                    data-error="Ошибка"
+                    placeholder="+7 (123) 123-45-67"
+                    class="choose__input input-phone" />
+                  <textarea
+                    name="form[]"
+                    data-error="Ошибка"
+                    placeholder="Опишите какое топливо используете, объем и адрес доставки"
+                    class="choose__input choose__input_textarea"></textarea>
+                  <button type="submit" class="choose__submit">
+                    <span>Получить предложение</span>
+                  </button>
+                  <span class="choose__description"
+                    >Нажимая на кнопку отправить, вы даете согласие на обработку своих
+                    <a href="#">персональных данных</a></span
+                  >
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__contacts contacts">
+          <div class="contacts__container">
+            <h2 class="contacts__title title">
+              <span>Подробную информацию</span> можно узнать в отделе продаж компании «Магнум Ойл»
+            </h2>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <a href="tel:+74991135414" class="contacts__link">+7 (499) 113-54-14</a>
+              </li>
+              <li class="contacts__item">
+                <a href="javascript:void(0);" class="contacts__link">WhatsApp</a>
+              </li>
+              <li class="contacts__item">
+                <a href="mailto:24@magnumoil.ru" class="contacts__link">24@magnumoil.ru</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="page__employees employees">
+          <div class="employees__container">
+            <h2 class="employees__title title">Сотрудники</h2>
+            <ul class="employees__body">
+              <li class="employees__card card-employee">
+                <div class="card-employee__image-ibg">
+                  <img
+                    src="@img/employees/01.png"
+                    alt="Руководитель отдела продаж: Давыдова Екатерина Анатольевна" />
+                </div>
+                <div class="card-employee__content">
+                  <h3 class="card-employee__title">Давыдова Екатерина Анатольевна</h3>
+                  <h5 class="card-employee__role">Руководитель отдела продаж.</h5>
+                  <p class="card-employee__descr">
+                    Опыт работы на рынке нефтепродуктов с 2007 года. Занимается закупками на бирже и
+                    продажами крупным оптом всех групп нефтепродуктов.
+                  </p>
+                </div>
+              </li>
+              <li class="employees__card card-employee">
+                <div class="card-employee__image-ibg">
+                  <img
+                    src="@img/employees/02.png"
+                    alt="Руководитель отдела продаж: Харитонова Наталья Львовна" />
+                </div>
+                <div class="card-employee__content">
+                  <h3 class="card-employee__title">Харитонова Наталья Львовна</h3>
+                  <h5 class="card-employee__role">Руководитель отдела продаж.</h5>
+                  <p class="card-employee__descr">
+                    Опыт работы на рынке нефтепродуктов с 2017 года. Занимается продажами крупным и
+                    мелким оптом всех групп нефтепродуктов , специализация сжиженные углеводородные
+                    газы.
+                  </p>
+                </div>
+              </li>
+              <li class="employees__card card-employee">
+                <div class="card-employee__image-ibg">
+                  <img
+                    src="@img/employees/03.png"
+                    alt="Руководитель отдела продаж: Староверов Сергей Николаевич" />
+                </div>
+                <div class="card-employee__content">
+                  <h3 class="card-employee__title">Староверов Сергей Николаевич</h3>
+                  <h5 class="card-employee__role">Руководитель отдела продаж.</h5>
+                  <p class="card-employee__descr">
+                    Опыт работы на рынке нефтепродуктов с 1998 года. Занимается продажами
+                    автотранспортом всех групп нефтепродуктов.
+                  </p>
+                </div>
+              </li>
+              <li class="employees__card card-employee">
+                <div class="card-employee__image-ibg">
+                  <img
+                    src="@img/employees/03.png"
+                    alt="Руководитель отдела продаж: Давыдова Екатерина Анатольевна" />
+                </div>
+                <div class="card-employee__content">
+                  <h3 class="card-employee__title">Давыдова Екатерина Анатольевна</h3>
+                  <h5 class="card-employee__role">Руководитель отдела продаж.</h5>
+                  <p class="card-employee__descr">
+                    Опыт работы на рынке нефтепродуктов с 2007 года. Занимается закупками на бирже и
+                    продажами крупным оптом всех групп нефтепродуктов.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="page__blog blog">
+          <div class="blog__container">
+            <div class="blog__header">
+              <h2 class="blog__title title">Блог</h2>
+              <a href="#" class="blog__link">Все статьи ➝</a>
+            </div>
+            <div class="blog__body blog__body_tripple">
+              <a href="#" class="blog__card card-blog">
+                <div class="card-blog__image-box">
+                  <img src="#" alt="" class="card-blog__image" />
+                </div>
+                <div class="card-blog__body">
+                  <h3 class="card-blog__title">
+                    Росстандарт начнет закупки топлива на АЗС в режиме «тайного покупателя»
+                  </h3>
+                  <div class="card-blog__date">
+                    <span>07.12.2021</span>
+                    <span>1578</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="blog__card card-blog">
+                <div class="card-blog__image-box">
+                  <img src="#" alt="" class="card-blog__image" />
+                </div>
+                <div class="card-blog__body">
+                  <h3 class="card-blog__title">
+                    Росстандарт начнет закупки топлива на АЗС в режиме «тайного покупателя»
+                  </h3>
+                  <div class="card-blog__date">
+                    <span>07.12.2021</span>
+                    <span>1578</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="blog__card card-blog">
+                <div class="card-blog__image-box">
+                  <img src="#" alt="" class="card-blog__image" />
+                </div>
+                <div class="card-blog__body">
+                  <h3 class="card-blog__title">
+                    Росстандарт начнет закупки топлива на АЗС в режиме «тайного покупателя»
+                  </h3>
+                  <div class="card-blog__date">
+                    <span>07.12.2021</span>
+                    <span>1578</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a href="#" class="blog__link blog__link_hidden">Все статьи ➝</a>
+          </div>
+        </section>
+        <div class="page__news news">
+          <div class="news__container">
+            <div class="news__background">
+              <div class="news__content">
+                <div class="news__item _flex">
+                  <div class="news__image-box">
+                    <img src="@img/news/bell.svg" aria-hidden="true" alt="" />
+                  </div>
+                  <div class="news__item-column">
+                    <span
+                      >Подпишитесь <br />
+                      на новости и акции</span
+                    >
+                    <span
+                      >Получайте всю актуальную информацию о топливной отрасли. Только актуальная
+                      информация, без спама.</span
+                    >
+                  </div>
+                </div>
+                <div class="news__item _flex">
+                  <form action="#" class="news__item-form form-news">
+                    <div class="form-news__item">
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="form[]"
+                        data-error="Ошибка"
+                        placeholder="E-mail адрес"
+                        class="form-news__input" />
+                      <button class="form-news__submit" type="submit">
+                        <span>Подписаться</span>
+                      </button>
+                    </div>
+                    <span class="form-news__item form-news__item_span"
+                      >Отправляя форму, вы даете согласие на обработку
+                      <a href="#">персональных данных.</a></span
+                    >
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="page__blog blog">
+          <div class="blog__container">
+            <div class="blog__header">
+              <h2 class="blog__title title">Новости</h2>
+              <a href="#" class="blog__link">Все новости ➝</a>
+            </div>
+            <div class="blog__body blog__body_news">
+              <a href="#" class="blog__card card-blog">
+                <div class="card-blog__image-box">
+                  <img src="#" alt="" class="card-blog__image" />
+                </div>
+                <div class="card-blog__body">
+                  <h3 class="card-blog__title">
+                    Росстандарт начнет закупки топлива на АЗС в режиме «тайного покупателя»
+                  </h3>
+                  <div class="card-blog__date">
+                    <span>07.12.2021</span>
+                    <span>1578</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="blog__card card-blog">
+                <div class="card-blog__image-box">
+                  <img src="#" alt="" class="card-blog__image" />
+                </div>
+                <div class="card-blog__body">
+                  <h3 class="card-blog__title">
+                    Росстандарт начнет закупки топлива на АЗС в режиме «тайного покупателя»
+                  </h3>
+                  <div class="card-blog__date">
+                    <span>07.12.2021</span>
+                    <span>1578</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="blog__card card-blog">
+                <div class="card-blog__image-box">
+                  <img src="#" alt="" class="card-blog__image" />
+                </div>
+                <div class="card-blog__body">
+                  <h3 class="card-blog__title">
+                    Росстандарт начнет закупки топлива на АЗС в режиме «тайного покупателя»
+                  </h3>
+                  <div class="card-blog__date">
+                    <span>07.12.2021</span>
+                    <span>1578</span>
+                  </div>
+                </div>
+              </a>
+              <a href="#" class="blog__card card-blog">
+                <div class="card-blog__image-box">
+                  <img src="#" alt="" class="card-blog__image" />
+                </div>
+                <div class="card-blog__body">
+                  <h3 class="card-blog__title">
+                    Росстандарт начнет закупки топлива на АЗС в режиме «тайного покупателя»
+                  </h3>
+                  <div class="card-blog__date">
+                    <span>07.12.2021</span>
+                    <span>1578</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <a href="#" class="blog__link blog__link_hidden">Все новости ➝</a>
+          </div>
+        </section>
+      </main>
+      @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{}) @@include('html/_js.htm',{})
+  </body>
+</html>
