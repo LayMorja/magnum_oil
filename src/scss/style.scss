@@ -9,7 +9,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap);
 
 // Подключить если есть локальные файлы шрифтов
-@import "fonts/fonts";
+@import 'fonts/fonts';
 
 // Подключение иконочных шрифтов ==============================================================================================================================================================================================================================================================================
 // Подключить если есть файл иконочного шрифта
@@ -53,40 +53,40 @@ $responsiveType: 1;
 @import 'base/null';
 
 body {
-   background-color: #FAFAFA;
-   // Скролл заблокирован
-   .lock & {
-      overflow: hidden;
-      touch-action: none;
-   }
-   // Сайт загружен
-   .loaded & {
-   }
+  background-color: #fafafa;
+  // Скролл заблокирован
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
+  // Сайт загружен
+  .loaded & {
+  }
 }
 :root {
-   --clr-white: 0 0% 100%;
-   --clr-footer: 217 75% 12%;
-   --clr-black: 0 0% 0%;
-   --clr-red: 5 79% 57%;
-   --clr-grey: 0 0% 91%;
+  --clr-white: 0 0% 100%;
+  --clr-footer: 217 75% 12%;
+  --clr-black: 0 0% 0%;
+  --clr-red: 5 79% 57%;
+  --clr-grey: 0 0% 91%;
 
-   --ff-sans-normal: 'Roboto';
-   --ff-title: 'EuclidCircularA';
+  --ff-sans-normal: 'Roboto';
+  --ff-title: 'EuclidCircularA';
 }
 // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
-   min-height: 100%;
-   display: flex;
-   flex-direction: column;
-   overflow: hidden;
-   // Прижимаем footer
-   > main {
-      flex: 1 1 auto;
-   }
-   // Фикс для слайдеров
-   > * {
-      min-width: 0;
-   }
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  // Прижимаем footer
+  > main {
+    flex: 1 1 auto;
+  }
+  // Фикс для слайдеров
+  > * {
+    min-width: 0;
+  }
 }
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
 
@@ -97,48 +97,48 @@ body {
 Снипет (HTML): cnt
 */
 @if ($responsiveType==1) {
-   // Отзывчивая
-   [class*='__container'] {
-      @if ($maxWidthContainer>0) {
-         max-width: rem($maxWidthContainer);
-         box-sizing: content-box;
-         margin: 0 auto;  
-      }
-      @media (max-width: $tablet) and (max-height: $mobileSmall) {
-         max-width: rem(750);
-      }
-      @media (max-width: $mobile) and (max-height: $mobileSmall) {
-         max-width: rem(480);
-      }
-      @if ($containerPadding > 0) {
-         padding: 0 rem(math.div($containerPadding, 2));
-      }
-   } 
-} @else {
-   // По брейк-поинтам
-   [class*='__container'] {
+  // Отзывчивая
+  [class*='__container'] {
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      box-sizing: content-box;
       margin: 0 auto;
-      @if ($maxWidthContainer>0) {
-         max-width: rem($maxWidthContainer);
-         box-sizing: content-box;
-      } @else {
-         @if ($containerPadding>0) {
-            padding: 0 rem(math.div($containerPadding, 2));
-         }
+    }
+    @media (max-width: $tablet) and (max-height: $mobileSmall) {
+      max-width: rem(750);
+    }
+    @media (max-width: $mobile) and (max-height: $mobileSmall) {
+      max-width: rem(480);
+    }
+    @if ($containerPadding > 0) {
+      padding: 0 rem(math.div($containerPadding, 2));
+    }
+  }
+} @else {
+  // По брейк-поинтам
+  [class*='__container'] {
+    margin: 0 auto;
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      box-sizing: content-box;
+    } @else {
+      @if ($containerPadding>0) {
+        padding: 0 rem(math.div($containerPadding, 2));
       }
-      @media (max-width: $pc) {
-         max-width: rem(970);
+    }
+    @media (max-width: $pc) {
+      max-width: rem(970);
+    }
+    @media (max-width: $tablet) {
+      max-width: rem(750);
+    }
+    @media (max-width: $mobile) {
+      max-width: none;
+      @if ($containerPadding>0 and $maxWidthContainer>0) {
+        padding: 0 rem(math.div($containerPadding, 2));
       }
-      @media (max-width: $tablet) {
-         max-width: rem(750);
-      }
-      @media (max-width: $mobile) {
-         max-width: none;
-         @if ($containerPadding>0 and $maxWidthContainer>0) {
-            padding: 0 rem(math.div($containerPadding, 2));
-         }
-      }
-   }
+    }
+  }
 }
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
@@ -160,173 +160,188 @@ body {
 // Подключение стилей отдельных страниц
 @import 'home';
 
-
 .page {
-
-   > * { 
-      margin-bottom: rem(120);
-      @media(max-width: $notebook) {
-         margin-bottom: rem(100);
-      }
-      @media(max-width: $tablet) {
-         margin-bottom: rem(80);
-      }
-      @media(max-width: $mobileNormal) {
-         margin-bottom: rem(70);
-      }
-   }
-
-   &__blog {
+  > * {
+    margin-bottom: rem(120);
+    @media (max-width: $notebook) {
+      margin-bottom: rem(100);
+    }
+    @media (max-width: $tablet) {
       margin-bottom: rem(80);
-      @media(max-width: $notebook) {
-         margin-bottom: rem(60);
-      }
-      @media(max-width: $tablet) {
-         margin-bottom: rem(80);
-      }
-      @media(max-width: $mobileNormal) {
-         margin-bottom: rem(70);
-      }
-      @media(max-width: $tablet) and (max-height: $mobileSmall) {
-         margin-bottom: rem(60);
-      }
-   }
+    }
+    @media (max-width: $mobileNormal) {
+      margin-bottom: rem(70);
+    }
+  }
 
-   &__breadcrumbs {
-      margin-bottom: 0 !important;
-   }
-   
-   &__news {
-      @media(max-width: $notebook) {
-         margin-bottom: rem(90);
-      }
-   }
+  &__blog {
+    margin-bottom: rem(80);
+    @media (max-width: $notebook) {
+      margin-bottom: rem(60);
+    }
+    @media (max-width: $tablet) {
+      margin-bottom: rem(80);
+    }
+    @media (max-width: $mobileNormal) {
+      margin-bottom: rem(70);
+    }
+    @media (max-width: $tablet) and (max-height: $mobileSmall) {
+      margin-bottom: rem(60);
+    }
+  }
 
-   &__news.news_choose {
-      margin-bottom: rem(120);
-      @media(max-width: $notebook) {
-         margin-bottom: rem(110);
-      }
-      @media(max-width: $mobileNormal) {
-         margin-bottom: rem(70);
-      }
-   }
-   
-   &__char {
-   }
-   
-   &__price {
-   }
+  &__breadcrumbs {
+    margin-bottom: 0 !important;
+  }
 
-   &__use {
-      @include adaptiveValue("margin-bottom", 80, 60);
-      @media(max-width: $tablet) and (max-height: $mobileSmall) {
-         margin-bottom: rem(70);
-      }
-   }
+  &__news {
+    @media (max-width: $notebook) {
+      margin-bottom: rem(90);
+    }
+  }
 
-   &__product {
-      @include adaptiveValue("margin-bottom", 75, 50);
-   }
+  &__news.news_choose {
+    margin-bottom: rem(120);
+    @media (max-width: $notebook) {
+      margin-bottom: rem(110);
+    }
+    @media (max-width: $mobileNormal) {
+      margin-bottom: rem(70);
+    }
+  }
 
-   &__hero-slider {
-      &:not(:last-child) {margin-bottom: rem(100);}
-      @media(max-width: $tablet) {
-         &:not(:last-child) {margin-bottom: rem(30);}
-      }
-   }
+  &__use {
+    @include adaptiveValue('margin-bottom', 80, 60);
+    @media (max-width: $tablet) and (max-height: $mobileSmall) {
+      margin-bottom: rem(70);
+    }
+  }
 
-   
-   &__product-benefits {
-      &:not(:last-child) {margin-bottom: rem(90);}
-      @media(max-width: $tablet) and (max-height: $mobileSmall) {
-         margin-bottom: rem(75);
-      }
-      @media(max-width: $mobileNormal) {
-         &:not(:last-child) {margin-bottom: rem(80);}
-      }
-   }
-   
-   &__reviews {
-      @include adaptiveValue("margin-bottom", 148, 60);
-      @media(max-width: $tablet) and (max-height: $mobileSmall) {
-         margin-bottom: rem(80);
-      }
-   }
+  &__product {
+    @include adaptiveValue('margin-bottom', 75, 50);
+  }
 
-   &__experience {
-   }
+  &__hero-slider {
+    &:not(:last-child) {
+      margin-bottom: rem(100);
+    }
+    @media (max-width: $tablet) {
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+      }
+    }
+  }
 
-   &__another {
-      &:not(:last-child) {margin-bottom: rem(80);}
-      @media(max-width: $tablet) and (max-height: $mobileSmall) {
-         &:not(:last-child) {margin-bottom: rem(50);}
+  &__product-benefits {
+    &:not(:last-child) {
+      margin-bottom: rem(90);
+    }
+    @media (max-width: $tablet) and (max-height: $mobileSmall) {
+      margin-bottom: rem(75);
+    }
+    @media (max-width: $mobileNormal) {
+      &:not(:last-child) {
+        margin-bottom: rem(80);
       }
-      @media(max-width: $mobileNormal) {
-         &:not(:last-child) {margin-bottom: rem(50);}
-      }
-   }
-   
-   &__consult {
-      @include adaptiveValue("margin-bottom", 120, 80);
-      @media(max-width: $mobile) and (max-height: $mobileSmall) {
-         margin-bottom: rem(15);
-      }
-      @media(max-width: $mobile) {
-         margin-bottom: rem(20);
-      }
-      .page_home & {
-         @media(max-width: $mobileSmall) {
-            margin-bottom: rem(10);
-         }
-         @media(max-width: $mobile) and (max-height: $mobileSmall) {
-            margin-bottom: rem(10);
-         }
-      }
-      @media(max-width: $mobileSmall) {
-         margin-bottom: rem(10);
-      }
-   }
-   
-   &__oil {
-   }
-   
-   &__products {
-      &:not(:last-child) {margin-bottom: rem(80);}
-      @media(max-width: $tablet) and (max-height: $mobileSmall) {
-         margin-bottom: rem(70);
-      }
-      @media(max-width: $mobileNormal) {
-         &:not(:last-child) {margin-bottom: rem(60);}
-      }
-   }
-   
-   &__advantages {
-   }
-   
-   &_inner {
-      padding-top: rem(60);
-   }
+    }
+  }
 
-   &__main {
-      @media(min-width: $mobile) {
-         padding-top: rem(45);
-      }
-      @media(max-width: $tablet) {
-         padding-top: rem(185);
-      }
-      @media(max-width: $tablet) and (max-height: $mobileSmall) {
-         margin-bottom: rem(80);
-      }
-      @media(max-width: $mobile) {
-         padding-top: rem(105);
-      }
-      @media(max-width: $mobileNormal) {
-         padding-top: rem(70);
-      }
-   }
+  &__reviews {
+    @include adaptiveValue('margin-bottom', 148, 60);
+    @media (max-width: $tablet) and (max-height: $mobileSmall) {
+      margin-bottom: rem(80);
+    }
+  }
 
-   &__benefit {
-      @include adaptiveValue("margin-bottom", 90, 80);
-   }
+  &__another {
+    &:not(:last-child) {
+      margin-bottom: rem(80);
+    }
+    @media (max-width: $tablet) and (max-height: $mobileSmall) {
+      &:not(:last-child) {
+        margin-bottom: rem(50);
+      }
+    }
+    @media (max-width: $mobileNormal) {
+      &:not(:last-child) {
+        margin-bottom: rem(50);
+      }
+    }
+  }
+
+  &__consult {
+    @include adaptiveValue('margin-bottom', 120, 80);
+    @media (max-width: $mobile) and (max-height: $mobileSmall) {
+      margin-bottom: rem(15);
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: rem(20);
+    }
+    .page_home & {
+      @media (max-width: $mobileSmall) {
+        margin-bottom: rem(10);
+      }
+      @media (max-width: $mobile) and (max-height: $mobileSmall) {
+        margin-bottom: rem(10);
+      }
+    }
+    @media (max-width: $mobileSmall) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  &__products {
+    &:not(:last-child) {
+      margin-bottom: rem(80);
+    }
+    @media (max-width: $tablet) and (max-height: $mobileSmall) {
+      margin-bottom: rem(70);
+    }
+    @media (max-width: $mobileNormal) {
+      &:not(:last-child) {
+        margin-bottom: rem(60);
+      }
+    }
+  }
+
+  &_inner {
+    padding-top: rem(60);
+  }
+
+  &__main {
+    @media (min-width: $mobile) {
+      padding-top: rem(45);
+    }
+    @media (max-width: $tablet) {
+      padding-top: rem(185);
+    }
+    @media (max-width: $tablet) and (max-height: $mobileSmall) {
+      margin-bottom: rem(80);
+    }
+    @media (max-width: $mobile) {
+      padding-top: rem(105);
+    }
+    @media (max-width: $mobileNormal) {
+      padding-top: rem(70);
+    }
+  }
+
+  &__benefit {
+    @include adaptiveValue('margin-bottom', 90, 80);
+  }
+
+  &__oil-benefits {
+    &:not(:last-child) {
+      margin-bottom: rem(100);
+    }
+    @media (max-width: $notebook) {
+      margin-bottom: rem(80);
+    }
+    @media (max-width: $tablet) {
+      margin-bottom: rem(70);
+    }
+    @media (max-width: $mobileNormal) {
+      margin-bottom: rem(60);
+    }
+  }
 }
