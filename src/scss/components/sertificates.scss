@@ -1,0 +1,34 @@
+//====================================================================================================
+.sertificates {
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem(25);
+    }
+    //== 768px ==//
+    @media (min-width: $mobile) {
+      &:not(:last-child) {
+        margin-bottom: rem(45);
+      }
+    }
+  }
+
+  &__slider {
+    max-width: rem(1140);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__slide {
+    height: rem(420);
+    text-align: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    @media (min-width: em(879.98)) {
+      height: rem(469);
+    }
+  }
+}
+//====================================================================================================

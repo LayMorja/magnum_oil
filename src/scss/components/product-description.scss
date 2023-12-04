@@ -1,0 +1,155 @@
+.product-benefits {
+  &__description {
+    &:not(:last-child) {
+      margin-bottom: rem(45);
+
+      @media (min-width: em(1199.98)) {
+        margin-bottom: rem(80);
+      }
+    }
+  }
+
+  &__description-block {
+    &:not(:last-child) {
+      margin-bottom: rem(45);
+
+      @media (min-width: em(1199.98)) {
+        margin-bottom: rem(80);
+      }
+    }
+  }
+}
+.description-block {
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem(20);
+      @media (min-width: em(1199.98)) {
+        margin-bottom: rem(30);
+      }
+    }
+  }
+
+  &__general {
+    max-width: rem(640);
+    color: rgba(0, 0, 0, 0.6);
+    font-size: rem(36);
+    line-height: 116%;
+
+    &:not(:last-child) {
+      margin-bottom: rem(50);
+    }
+
+    @media (max-width: em(1299.98)) {
+      font-size: rem(30);
+      &:not(:last-child) {
+        margin-bottom: rem(40);
+      }
+    }
+    //== 992px ==//
+    @media (max-width: $tablet) {
+      font-size: rem(28);
+
+      &:not(:last-child) {
+        margin-bottom: rem(30);
+      }
+    }
+
+    @media (min-width: em(1199.98)) {
+      max-width: rem(1260);
+    }
+    @media (max-width: $tablet) and (max-height: $mobileSmall) {
+      font-size: rem(24);
+    }
+    @media (max-width: $mobileNormal) {
+      font-size: rem(24);
+    }
+    @media (max-width: $mobileSmall) {
+      font-size: rem(20);
+
+      &:not(:last-child) {
+        margin-bottom: rem(20);
+      }
+    }
+  }
+
+  &__content {
+    max-width: rem(640);
+    .arrowed-link {
+      display: inline-block;
+      margin-top: rem(20);
+
+      //== 992px ==//
+      @media (min-width: $tablet) {
+        margin-top: rem(40);
+      }
+    }
+
+    @media (min-width: em(1199.98)) {
+      max-width: none;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(100);
+    }
+
+    h2,
+    h3,
+    h4 {
+      font-weight: 700;
+      &:not(:last-child) {
+        margin-bottom: rem(5);
+      }
+      @media (min-width: em(1199.98)) {
+        font-size: rem(20);
+        &:not(:last-child) {
+          margin-bottom: rem(10);
+        }
+      }
+    }
+  }
+
+  &__text {
+    > * ~ * {
+      margin-top: rem(10);
+      @media (min-width: em(1199.98)) {
+        margin-top: rem(30);
+      }
+    }
+  }
+
+  &__par {
+  }
+
+  &__image {
+    max-width: rem(450);
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    &--desktop {
+      display: none;
+
+      @media (min-width: em(1199.98)) {
+        display: block;
+      }
+    }
+    &--mobile {
+      @media (min-width: em(1199.98)) {
+        display: none;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: rem(25);
+    }
+
+    @media (min-width: em(1199.98)) {
+      max-width: rem(560);
+      margin-left: auto;
+      margin-right: auto;
+
+      &:not(:last-child) {
+        margin-bottom: rem(0);
+      }
+    }
+  }
+}
