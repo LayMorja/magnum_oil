@@ -16,6 +16,28 @@
     font-size: rem(24);
   }
 }
+.main-title {
+  font-family: var(--ff-title);
+  font-weight: 700;
+  font-size: rem(48);
+  line-height: 109%;
+  //== 992px ==//
+  @media (max-width: $tablet) {
+    font-size: rem(42);
+  }
+  @media (max-width: $mobile) {
+    font-size: rem(36);
+  }
+  @media (max-width: $tablet) and (max-height: $mobileSmall) {
+    font-size: rem(32);
+  }
+  @media (max-width: $mobileNormal) {
+    font-size: rem(32);
+  }
+  @media (max-width: $mobileSmall) {
+    font-size: rem(28);
+  }
+}
 .text-400 {
   line-height: 1.2;
   color: #646464;
@@ -31,4 +53,23 @@
 }
 ._flex {
   display: flex;
+}
+.arrowed-link {
+  color: hsl(var(--clr-red));
+  font-family: 'IBM Plex Sans';
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: 200%;
+
+  span {
+    text-decoration: underline;
+  }
+
+  @media (any-hover: hover) {
+    &:hover {
+      span {
+        text-decoration: none;
+      }
+    }
+  }
 }
