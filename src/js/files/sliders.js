@@ -337,6 +337,73 @@ document.addEventListener('DOMContentLoaded', () => {
         on: {},
       });
     }
+    if (document.querySelector('.warehouse__slider')) {
+      // Указываем скласс нужного слайдера
+      // Создаем слайдер
+      let warehouseSlider = new Swiper('.warehouse__slider', {
+        // Указываем скласс нужного слайдера
+        modules: [FreeMode, Mousewheel],
+        observer: true,
+        observeParents: true,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        speed: 800,
+        freeMode: {
+          enabled: true,
+        },
+        mousewheel: {
+          forceToAxis: false,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1.3,
+            spaceBetween: 10,
+          },
+          639.98: {
+            slidesPerView: 2,
+          },
+          879.98: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+        },
+        on: {},
+      });
+    }
+    if (document.querySelector('.sertificates__slider')) {
+      // Указываем скласс нужного слайдера
+      // Создаем слайдер
+      let sertificatesSlider = new Swiper('.sertificates__slider', {
+        // Указываем скласс нужного слайдера
+        modules: [FreeMode, Mousewheel],
+        observer: true,
+        observeParents: true,
+        slidesPerView: 3,
+        spaceBetween: 75,
+        speed: 800,
+        freeMode: {
+          enabled: true,
+        },
+        mousewheel: {
+          forceToAxis: false,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1.3,
+            spaceBetween: 30,
+          },
+          639.98: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          879.98: {
+            slidesPerView: 3,
+            spaceBetween: 75,
+          },
+        },
+        on: {},
+      });
+    }
     document.querySelector('.use')?.classList.add('use--mobile');
     document.querySelector('.products')?.classList.add('products--mobile');
   }
